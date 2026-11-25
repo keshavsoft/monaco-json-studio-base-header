@@ -1,0 +1,54 @@
+:root {
+  --bg-page: #0a0e17;
+  --bg-header: #161b26;
+  --border-color: #2a3142;
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --accent-blue: #38bdf8;
+  --accent-amber: #f59e0b;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; background: var(--bg-page); color: var(--text-primary); }
+.region-header {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 14px;
+  background: var(--bg-header);
+  border-bottom: 1px solid var(--border-color);
+  user-select: none;
+}
+.header-left, .header-right { display: flex; align-items: center; gap: 8px; }
+.brand-icon { color: var(--accent-blue); }
+.header-label {
+  color: var(--accent-blue);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.version-pill, .header-file-pill, .header-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+.header-file-pill i { color: var(--accent-amber); }
+.btn-header-file, .btn-header-action, .header-select {
+  padding: 4px 9px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background: #202635;
+  color: var(--text-primary);
+  font-size: 12px;
+  cursor: pointer;
+}
+.btn-header-file:hover, .btn-header-action:hover { border-color: var(--accent-blue); }
+.header-file-input { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.preview-log { margin: 16px; padding: 12px; background: #0f1420; border: 1px solid var(--border-color); border-radius: 6px; font-size: 12px; }

@@ -1,0 +1,16 @@
+<header class="region-header region-header--select" data-region="header" data-type="select" data-pane-key="{{key}}">
+    <div class="header-left">
+        <label class="header-label" for="{{selectId}}">{{label}}</label>
+        <select id="{{selectId}}" class="header-select" aria-label="{{label}}">
+            {{#each options}}
+            <option value="{{value}}" {{#if selected}}selected{{/if}}>{{label}}</option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="header-right">
+        <span class="header-file-pill">
+            <i class="bi bi-filetype-json" aria-hidden="true"></i>
+            <span id="{{fileNameId}}" class="header-file-name">{{fileName}}</span>
+        </span>
+    </div>
+</header>

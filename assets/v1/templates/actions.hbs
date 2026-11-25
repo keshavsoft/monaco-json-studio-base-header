@@ -1,0 +1,14 @@
+<header class="region-header region-header--actions" data-region="header" data-type="actions" data-pane-key="{{key}}">
+    <div class="header-left">
+        <span class="header-label">{{label}}</span>
+        {{#each buttons}}
+        <button type="button" class="btn-header-action" data-header-action="{{action}}">
+            {{#if icon}}<i class="bi {{icon}}" aria-hidden="true"></i>{{/if}}
+            <span>{{text}}</span>
+        </button>
+        {{/each}}
+    </div>
+    <div class="header-right">
+        <span id="{{statusId}}" class="header-status-pill">Ready</span>
+    </div>
+</header>

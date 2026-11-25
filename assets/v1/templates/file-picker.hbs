@@ -1,0 +1,16 @@
+<header class="region-header region-header--file-picker" data-region="header" data-type="file-picker" data-pane-key="{{key}}">
+    <div class="header-left">
+        <span class="header-label">{{label}}</span>
+        <button id="{{fileBtnId}}" type="button" class="btn-header-file" title="Choose a file for {{label}}">
+            <i class="bi bi-folder2-open" aria-hidden="true"></i>
+            <span>Select File</span>
+        </button>
+        <input type="file" id="{{fileInputId}}" class="header-file-input" accept=".json,.js,.txt,application/json">
+    </div>
+    <div class="header-right">
+        <span class="header-file-pill">
+            <i class="bi bi-filetype-json" aria-hidden="true"></i>
+            <span id="{{fileNameId}}" class="header-file-name">{{fileName}}</span>
+        </span>
+    </div>
+</header>

@@ -1,0 +1,22 @@
+[
+  {
+    "event": "click",
+    "selector": ".btn-header-file",
+    "action": "openFilePicker"
+  },
+  {
+    "event": "change",
+    "selector": ".header-file-input",
+    "action": "handleFileSelect"
+  },
+  {
+    "event": "change",
+    "selector": ".header-select",
+    "action": "handleSelectChange"
+  },
+  {
+    "event": "click",
+    "selector": ".btn-header-action",
+    "action": "handleHeaderAction"
+  }
+]

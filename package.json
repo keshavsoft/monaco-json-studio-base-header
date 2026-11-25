@@ -1,0 +1,42 @@
+{
+  "name": "monaco-json-studio-base-header",
+  "version": "1.0.0",
+  "description": "Handlebars-driven HTML header components with dom-primitive-bindings for Monaco JSON Studio.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keshavsoft/monaco-json-studio-base-header.git"
+  },
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "monaco-json-studio-base-header": "./bin/index.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "assets",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --check src/index.js && node --check src/v1/index.js && node --check bin/index.js"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.10"
+  },
+  "keywords": [
+    "monaco",
+    "header",
+    "handlebars",
+    "dom-primitive-bindings",
+    "keshavsoft"
+  ],
+  "author": "KeshavSoft",
+  "license": "MIT"
+}
