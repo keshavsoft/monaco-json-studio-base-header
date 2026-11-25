@@ -10,7 +10,7 @@
   <header class="site-header">
     <a class="brand" href="./index.html">
       <span>monaco-json-studio-base-header</span>
-      <span class="badge">Base · Header</span>
+      <span class="badge">Base · Header (v2)</span>
     </a>
     <nav class="nav">
       <a href="./index.html">Overview</a>
@@ -26,12 +26,12 @@
     
     <div class="hero">
       <h1>Why monaco-json-studio-base-header Exists</h1>
-      <p>Handlebars (.hbs) header region primitives paired with dom-primitive-bindings.</p>
+      <p>Handlebars (.hbs) header region primitives paired with dom-primitive-bindings and optional extraButtons.</p>
     </div>
     <section>
       <h2>Design Story</h2>
       <p>Headers carry labels, file pickers, dataset dropdowns, and toolbar buttons that evolve independently from editor panes or footers.</p>
-      <p>By separating header markup into Handlebars templates (title.hbs, file-picker.hbs, select.hbs, actions.hbs) and wiring events declaratively with dom-primitive-bindings (bindings.json + actions.js), zero HTML lives inside JavaScript.</p>
+      <p>In v2, title.hbs, file-picker.hbs, and select.hbs accept an optional extraButtons array rendered via .btn-header-action and bound declaratively through dom-primitive-bindings (bindings.json + actions.js).</p>
     </section>
   </main>
 

@@ -1,6 +1,6 @@
 {
   "name": "monaco-json-studio-base-header",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "description": "Handlebars-driven HTML header components with dom-primitive-bindings for Monaco JSON Studio.",
   "publishConfig": {
     "access": "public"
@@ -25,7 +25,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "test": "node --check src/index.js && node --check src/v1/index.js && node --check bin/index.js"
+    "test": "node --check src/index.js && node --check src/v1/index.js && node --check src/v2/index.js && node --check bin/index.js"
   },
   "dependencies": {
     "handlebars": "^4.7.10"

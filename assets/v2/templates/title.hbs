@@ -1,0 +1,15 @@
+<header class="region-header region-header--title" data-region="header" data-type="title">
+    <div class="header-left">
+        <i class="bi bi-cpu-fill brand-icon" aria-hidden="true"></i>
+        <span class="header-label">{{label}}</span>
+        {{#if badge}}
+        <span class="version-pill">{{badge}}</span>
+        {{/if}}
+        {{#each extraButtons}}
+        <button type="button" class="btn-header-action" data-header-action="{{action}}">
+            {{#if icon}}<i class="bi {{icon}}" aria-hidden="true"></i>{{/if}}
+            <span>{{text}}</span>
+        </button>
+        {{/each}}
+    </div>
+</header>

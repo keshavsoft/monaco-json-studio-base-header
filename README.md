@@ -1,6 +1,6 @@
 # monaco-json-studio-base-header
 
-Handlebars (.hbs) header region primitives paired with dom-primitive-bindings.
+Handlebars (.hbs) header region primitives paired with dom-primitive-bindings and optional extraButtons.
 
 - **npm**: [https://www.npmjs.com/package/monaco-json-studio-base-header](https://www.npmjs.com/package/monaco-json-studio-base-header)
 - **GitHub**: [https://github.com/keshavsoft/monaco-json-studio-base-header](https://github.com/keshavsoft/monaco-json-studio-base-header)
@@ -24,6 +24,9 @@ npm install monaco-json-studio-base-header
 ```js
 import { renderHeader, generateHeaderPreview, HEADER_TYPES } from 'monaco-json-studio-base-header';
 
-const html = renderHeader({ type: 'file-picker', label: 'JSON Studio' });
-generateHeaderPreview({ type: 'select' });
+const html = renderHeader({
+  type: 'file-picker',
+  label: 'JSON Studio',
+  extraButtons: [{ text: 'Render', action: 'renderOutput', icon: 'bi-play-fill' }]
+});
 ```
