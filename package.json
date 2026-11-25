@@ -1,6 +1,6 @@
 {
   "name": "monaco-json-studio-base-header",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Handlebars-driven HTML header components with dom-primitive-bindings for Monaco JSON Studio.",
   "publishConfig": {
     "access": "public"
