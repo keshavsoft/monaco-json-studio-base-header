@@ -3,30 +3,49 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>monaco-json-studio-base-header — Docs</title>
-  <style>
-    body { font-family: system-ui, sans-serif; background: #0a0e17; color: #f3f4f6; max-width: 820px; margin: 2.5rem auto; padding: 0 1.25rem; line-height: 1.65; }
-    a { color: #38bdf8; }
-    code, pre { background: #030712; border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; }
-    pre { padding: 1rem; overflow-x: auto; }
-    code { padding: 2px 5px; }
-    .links { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1rem 0 2rem; }
-  </style>
+  <title>monaco-json-studio-base-header — Overview</title>
+  <link rel="stylesheet" href="./docs.css">
 </head>
 <body>
-  <h1>monaco-json-studio-base-header</h1>
-  <p>Handlebars (<code>.hbs</code>) header components paired with <code>dom-primitive-bindings</code>.</p>
-  <div class="links">
-    <a href="https://www.npmjs.com/package/monaco-json-studio-base-header">npm Package</a>
-    <a href="https://github.com/keshavsoft/monaco-json-studio-base-header">GitHub Repo</a>
-    <a href="https://keshavsoft.github.io/monaco-json-studio-docs/base-header.html">Suite Story &amp; Docs</a>
-    <a href="https://keshavsoft.github.io/monaco-json-studio-docs/base-body.html">Base Body</a>
-    <a href="https://keshavsoft.github.io/monaco-json-studio-docs/base-footer.html">Base Footer</a>
-  </div>
-  <h2>The Story</h2>
-  <p>Instead of hardcoding HTML inside JS, every header variant (<code>title.hbs</code>, <code>file-picker.hbs</code>, <code>select.hbs</code>, <code>actions.hbs</code>) is a clean Handlebars template in <code>assets/v1/templates/</code>.</p>
-  <h2>CLI &amp; API</h2>
-  <pre>npx monaco-json-studio-base-header file-picker
-npx monaco-json-studio-base-header select --html</pre>
+  <header class="site-header">
+    <a class="brand" href="./index.html">
+      <span>monaco-json-studio-base-header</span>
+      <span class="badge">Base · Header</span>
+    </a>
+    <nav class="nav">
+      <a class="active" href="./index.html">Overview</a>
+      <a href="./story.html">Story</a>
+      <a href="./npx-usage.html">npx Usage</a>
+      <a href="./npm-usage.html">npm Usage</a>
+      <a href="./dependencies.html">Dependencies</a>
+      <a href="https://keshavsoft.github.io/monaco-json-studio-base-docs/base-header.html">Base Docs ↗</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+    <div class="hero">
+      <h1>monaco-json-studio-base-header</h1>
+      <p>Handlebars (.hbs) header region primitives paired with dom-primitive-bindings.</p>
+      <div class="pill-links">
+        <a class="btn primary" href="https://www.npmjs.com/package/monaco-json-studio-base-header">npm Package</a>
+        <a class="btn" href="https://github.com/keshavsoft/monaco-json-studio-base-header">GitHub Repo</a>
+        <a class="btn" href="https://keshavsoft.github.io/monaco-json-studio-base-docs/base-header.html">Base Docs</a>
+      </div>
+    </div>
+    <section>
+      <h2>Documentation Map</h2>
+      <div class="grid">
+        <article class="card"><h3>Story</h3><p>Scope and architectural rationale behind this package.</p><div class="card-links"><a href="./story.html">Read Story →</a></div></article>
+        <article class="card"><h3>npx Usage</h3><p>CLI commands, flags, and output behavior.</p><div class="card-links"><a href="./npx-usage.html">Read CLI Guide →</a></div></article>
+        <article class="card"><h3>npm Usage</h3><p>Programmatic JavaScript API and exports.</p><div class="card-links"><a href="./npm-usage.html">Read API Guide →</a></div></article>
+        <article class="card"><h3>Dependencies</h3><p>Upstream packages and downstream consumers.</p><div class="card-links"><a href="./dependencies.html">View Graph →</a></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    KeshavSoft · <a style="color:var(--accent-cyan)" href="https://www.npmjs.com/package/monaco-json-studio-base-header">npm</a> · <a style="color:var(--accent-cyan)" href="https://github.com/keshavsoft/monaco-json-studio-base-header">GitHub</a> · <a style="color:var(--accent-cyan)" href="https://keshavsoft.github.io/monaco-json-studio-base-docs/base-header.html">Base Docs</a>
+  </footer>
 </body>
 </html>
